@@ -1,0 +1,16 @@
+<p>Show Result</p>
+<table>
+<tr>
+    <th>Narendra Modi</th>
+    <th>Arvind Kajiriwal</th>
+    <th>Shivraj Shing Chohan</th>
+    <th>Soniya Gandhi</th>
+</tr>
+<tr>
+<td><%= Vote.where(:candidate_id=>1).count %></td>
+<td><%= Vote.where(:candidate_id=>2).count %></td>
+<td><%= Vote.where(:candidate_id=>3).count %></td>
+<td><%= Vote.where(:candidate_id=>4).count %></td>
+
+</tr>
+</table>

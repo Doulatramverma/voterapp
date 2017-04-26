@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Candidate:</strong>
+  <%if @vote.candidate_id.present? %> 
+  <%= Candidate.find(@vote.candidate_id).name %> 
+    <% end %> 
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= User.find(@vote.user_id).email %>
+</p>
+
+<%= link_to 'RESULT', result_path %>
