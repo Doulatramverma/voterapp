@@ -1,7 +1,7 @@
 class SettingsController < ApplicationController
 
 	def new
-    @setting = Setting.create(:start_time => Time.now, :end_time=> Time.now + 15.minute )
+    @setting = Setting.create(:start_time => Time.now, :end_time=> Time.now + 15.minutes)
      @setting.save
      redirect_to @setting
   end
@@ -13,4 +13,5 @@ class SettingsController < ApplicationController
   end
   
 end
+
 
